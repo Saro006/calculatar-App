@@ -5,7 +5,7 @@ import { useState } from "react";
 const Calculator = () => {
   const [input, setInput] = useState('');
   
-  const handleClick = (value:String) => {
+  const handleClick = (value: string) => {
     if (value === '=') {
       try {
         setInput(eval(input).toString());
